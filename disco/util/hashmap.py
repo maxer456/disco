@@ -11,7 +11,7 @@ class HashMap(dict):
         return iter(self)
 
     def items(self):
-        return six.iteritems(self)
+        return six.iteritems(super(HashMap, self))
 
     def find(self, predicate):
         if not callable(predicate):
